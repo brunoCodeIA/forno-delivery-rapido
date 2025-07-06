@@ -1,8 +1,8 @@
-# Welcome to your Lovable project
+# Forno Delivery Rápido
 
-## Project info
+## Sobre o Projeto
 
-**URL**: https://lovable.dev/projects/458253bb-cb33-4dc3-8746-7d2b5a44c18e
+Forno Delivery Rápido é uma aplicação web para um serviço de delivery de comida, especializado em pizzas, massas e outros pratos. A aplicação permite que os clientes façam pedidos online, acompanhem o status de entrega e que os administradores gerenciem produtos, pedidos e configurações da loja.
 
 ## How can I edit this code?
 
@@ -50,24 +50,39 @@ npm run dev
 - Click on "New codespace" to launch a new Codespace environment.
 - Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## What technologies are used for this project?
+## Funcionalidades
 
-This project is built with:
+### Para Clientes
+- Cadastro e login de usuários
+- Navegação por categorias de produtos
+- Adição de produtos ao carrinho
+- Verificação de status da loja (aberta/fechada)
+- Cálculo de frete
+- Finalização de pedidos
+- Acompanhamento de pedidos
+
+### Para Administradores
+- Gerenciamento de produtos e categorias
+- Controle de pedidos
+- Configuração de status da loja
+- Relatórios de vendas
+
+## Tecnologias Utilizadas
 
 - Vite
 - TypeScript
 - React
 - shadcn-ui
 - Tailwind CSS
+- LocalStorage para persistência de dados
 
-## How can I deploy this project?
+## Estrutura do Projeto
 
-Simply open [Lovable](https://lovable.dev/projects/458253bb-cb33-4dc3-8746-7d2b5a44c18e) and click on Share -> Publish.
+- `/src/pages`: Contém as páginas da aplicação
+- `/src/components`: Componentes reutilizáveis
+- `/src/hooks`: Hooks personalizados
+- `/src/lib`: Utilitários e funções auxiliares
 
-## Can I connect a custom domain to my Lovable project?
+## Contribuição
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
