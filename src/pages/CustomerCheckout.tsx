@@ -154,7 +154,13 @@ Pagamento confirmado via PIX ✅`;
             {getCartItems().map((item, index) => (
               <div key={index} className="flex justify-between items-center">
                 <div className="flex items-center gap-3">
-                  <span className="text-2xl">{item.image}</span>
+                  <div className="w-10 h-10 bg-background rounded-lg flex items-center justify-center overflow-hidden">
+                    {typeof item.image === 'string' && item.image.startsWith('data:image') ? (
+                      <img src={item.image} alt={item.name} className="w-full h-full object-cover" />
+                    ) : (
+                      <span className="text-2xl">{item.image}</span>
+                    )}
+                  </div>
                   <div>
                     <p className="font-medium">{item.name}</p>
                     <p className="text-sm text-muted-foreground">Quantidade: {item.quantity}</p>

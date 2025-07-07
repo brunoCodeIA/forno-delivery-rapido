@@ -144,7 +144,7 @@ const CustomerCatalog = () => {
           name: "Pizza Margherita",
           description: "Molho de tomate, mussarela, manjericão fresco e azeite de oliva.",
           price: 39.90,
-          image: "🍕",
+          image: "https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?q=80&w=500&auto=format&fit=crop",
           rating: 4.8,
           category: "Pizzas"
         },
@@ -153,7 +153,7 @@ const CustomerCatalog = () => {
           name: "Pizza Pepperoni",
           description: "Molho de tomate, mussarela e pepperoni.",
           price: 45.90,
-          image: "🍕",
+          image: "https://images.unsplash.com/photo-1628840042765-356cda07504e?q=80&w=500&auto=format&fit=crop",
           rating: 4.7,
           category: "Pizzas"
         },
@@ -162,7 +162,7 @@ const CustomerCatalog = () => {
           name: "Calzone de Presunto e Queijo",
           description: "Massa de pizza recheada com presunto, queijo, orégano e molho de tomate.",
           price: 32.90,
-          image: "🥟",
+          image: "https://images.unsplash.com/photo-1536964549204-cce9eab227bd?q=80&w=500&auto=format&fit=crop",
           rating: 4.5,
           category: "Calzones"
         },
@@ -171,7 +171,7 @@ const CustomerCatalog = () => {
           name: "Lasanha à Bolonhesa",
           description: "Camadas de massa intercaladas com molho bolonhesa, molho bechamel e queijo gratinado.",
           price: 48.90,
-          image: "🍝",
+          image: "https://images.unsplash.com/photo-1619895092538-128341789043?q=80&w=500&auto=format&fit=crop",
           rating: 4.9,
           category: "Massas"
         },
@@ -180,7 +180,7 @@ const CustomerCatalog = () => {
           name: "Lasanha Quatro Queijos",
           description: "Camadas de massa intercaladas com molho branco e quatro tipos de queijos: mussarela, parmesão, provolone e gorgonzola.",
           price: 52.90,
-          image: "🍝",
+          image: "https://images.unsplash.com/photo-1574894709920-11b28e7367e3?q=80&w=500&auto=format&fit=crop",
           rating: 4.8,
           category: "Massas"
         },
@@ -189,7 +189,7 @@ const CustomerCatalog = () => {
           name: "Lasanha de Frango com Catupiry",
           description: "Camadas de massa intercaladas com frango desfiado, catupiry e molho branco.",
           price: 50.90,
-          image: "🍝",
+          image: "https://images.unsplash.com/photo-1633436375153-d7045cb93e38?q=80&w=500&auto=format&fit=crop",
           rating: 4.7,
           category: "Massas"
         },
@@ -198,7 +198,7 @@ const CustomerCatalog = () => {
           name: "Refrigerante Mokado Cola",
           description: "Refrigerante sabor cola, garrafa 2L.",
           price: 12.90,
-          image: "🥤",
+          image: "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?q=80&w=500&auto=format&fit=crop",
           rating: 4.5,
           category: "Bebidas"
         },
@@ -207,7 +207,7 @@ const CustomerCatalog = () => {
           name: "Refrigerante Mokado Guaraná",
           description: "Refrigerante sabor guaraná, garrafa 2L.",
           price: 12.90,
-          image: "🥤",
+          image: "https://images.unsplash.com/photo-1625772299848-391b6a87d7b3?q=80&w=500&auto=format&fit=crop",
           rating: 4.6,
           category: "Bebidas"
         },
@@ -216,7 +216,7 @@ const CustomerCatalog = () => {
           name: "Refrigerante Mokado Laranja",
           description: "Refrigerante sabor laranja, garrafa 2L.",
           price: 12.90,
-          image: "🥤",
+          image: "https://images.unsplash.com/photo-1596803244618-8dbee441d70b?q=80&w=500&auto=format&fit=crop",
           rating: 4.4,
           category: "Bebidas"
         }
@@ -252,28 +252,28 @@ const CustomerCatalog = () => {
           id: 1,
           name: "Molho de Alho",
           price: 5.90,
-          image: "🧄",
+          image: "https://images.unsplash.com/photo-1612200132999-b1b357a6972e?q=80&w=500&auto=format&fit=crop",
           category: "molho"
         },
         {
           id: 2,
           name: "Molho Barbecue",
           price: 6.90,
-          image: "🍖",
+          image: "https://images.unsplash.com/photo-1593645457241-1a3b9ddbcd8a?q=80&w=500&auto=format&fit=crop",
           category: "molho"
         },
         {
           id: 3,
           name: "Molho Picante",
           price: 5.90,
-          image: "🌶️",
+          image: "https://images.unsplash.com/photo-1589895224288-65e4d1a9a207?q=80&w=500&auto=format&fit=crop",
           category: "molho"
         },
         {
           id: 4,
           name: "Refrigerante Lata",
           price: 6.90,
-          image: "🥤",
+          image: "https://images.unsplash.com/photo-1527960471264-932f39eb5846?q=80&w=500&auto=format&fit=crop",
           category: "bebida"
         }
       ];
@@ -515,10 +515,10 @@ const CustomerCatalog = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="flex">
+      <div className="flex flex-col lg:flex-row">
         {/* Main Content */}
-        <div className="flex-1 p-4 lg:pr-80">
-          <div className="max-w-4xl mx-auto">
+        <div className="flex-1 p-2 sm:p-4 lg:pr-80 pb-20 lg:pb-4">
+          <div className="w-full max-w-4xl mx-auto">
             {/* Store Status Banner - Only shown if manager has set status */}
             {storeStatus.isOpen !== undefined && (
               storeStatus.isOpen ? (
@@ -545,45 +545,45 @@ const CustomerCatalog = () => {
             )}
 
             {/* Header */}
-            <div className="flex justify-between items-center mb-6">
+            <div className="flex flex-col xs:flex-row justify-between items-start xs:items-center gap-2 xs:gap-0 mb-3 sm:mb-6">
               <div>
-                <h1 className="text-2xl font-bold text-foreground mb-1">Olá, {customerData.fullName}! 👋</h1>
-                <p className="text-muted-foreground text-sm">O que você quer comer hoje?</p>
+                <h1 className="text-lg xs:text-xl sm:text-2xl font-bold text-foreground mb-0.5 sm:mb-1">Olá, {customerData.fullName.split(' ')[0]}! 👋</h1>
+                <p className="text-muted-foreground text-xs xs:text-sm">O que você quer comer hoje?</p>
               </div>
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <MapPin className="h-4 w-4" />
-                <span>{customerData.address?.neighborhood}</span>
+              <div className="flex items-center gap-1 xs:gap-2 text-xs xs:text-sm text-muted-foreground">
+                <MapPin className="h-3 w-3 xs:h-4 xs:w-4" />
+                <span className="truncate max-w-[100px] xs:max-w-[150px]">{customerData.address?.neighborhood}</span>
               </div>
             </div>
 
             {/* Search Bar */}
-            <div className="relative mb-6">
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+            <div className="relative mb-4 sm:mb-6">
+              <Search className="absolute left-2 xs:left-3 top-1/2 transform -translate-y-1/2 h-3 w-3 xs:h-4 xs:w-4 text-muted-foreground" />
               <Input
                 placeholder="Buscar pratos..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="pl-10"
+                className="pl-8 xs:pl-10 text-xs xs:text-sm h-8 xs:h-10"
               />
             </div>
 
             {/* Promotional Banner - Food-focused */}
-            <Card className="mb-6 overflow-hidden rounded-xl shadow-warm">
+            <Card className="mb-4 sm:mb-6 overflow-hidden rounded-xl shadow-warm">
               <CardContent className="p-0 relative">
-                <div className="relative overflow-hidden h-48 md:h-64">
+                <div className="relative overflow-hidden h-32 xs:h-36 sm:h-48 md:h-56">
                   <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-secondary/80 z-10"></div>
                   <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80')] bg-cover bg-center opacity-80"></div>
-                  <div className="absolute inset-0 flex flex-col justify-center p-6 z-20 text-white">
+                  <div className="absolute inset-0 flex flex-col justify-center p-3 xs:p-4 sm:p-6 z-20 text-white">
                     <div className="max-w-md">
-                      <Badge variant="secondary" className="mb-3 animate-flame-flicker">
+                      <Badge variant="secondary" className="mb-1 sm:mb-3 animate-flame-flicker text-xs">
                         <Flame className="h-3 w-3 mr-1" /> Sabor Irresistível
                       </Badge>
-                      <h2 className="text-2xl md:text-3xl font-bold mb-2 drop-shadow-md">Desperte seu Apetite</h2>
-                      <p className="text-sm md:text-base mb-4 drop-shadow-md">Sabores artesanais preparados com ingredientes frescos e técnicas tradicionais italianas.</p>
+                      <h2 className="text-lg xs:text-xl sm:text-2xl md:text-3xl font-bold mb-1 sm:mb-2 drop-shadow-md">Desperte seu Apetite</h2>
+                      <p className="text-xs sm:text-sm md:text-base mb-2 sm:mb-4 drop-shadow-md line-clamp-2 sm:line-clamp-3">Sabores artesanais preparados com ingredientes frescos e técnicas tradicionais italianas.</p>
                       <Button 
                         variant="secondary" 
                         size="sm" 
-                        className="shadow-fire"
+                        className="shadow-fire text-xs h-7 sm:h-9 sm:text-sm"
                         onClick={() => {
                           const menuSection = document.getElementById('menu-categories');
                           if (menuSection) menuSection.scrollIntoView({ behavior: 'smooth' });
@@ -598,8 +598,8 @@ const CustomerCatalog = () => {
             </Card>
 
             {/* Menu Categories */}
-            <div className="mb-6" id="menu-categories">
-              <h3 className="text-lg font-semibold mb-4">Categorias do Menu</h3>
+            <div className="mb-4 sm:mb-6" id="menu-categories">
+              <h3 className="text-base xs:text-lg font-semibold mb-2 xs:mb-4">Categorias do Menu</h3>
               {isMobile ? (
                 <Carousel className="w-full">
                   <CarouselContent>
@@ -607,7 +607,7 @@ const CustomerCatalog = () => {
                       <Button
                         variant={selectedCategory === "Todos" ? "fire" : "outline"}
                         onClick={() => setSelectedCategory("Todos")}
-                        className="min-w-fit rounded-full"
+                        className="min-w-fit rounded-full text-xs h-7 xs:h-8 xs:text-sm"
                       >
                         Todos
                       </Button>
@@ -617,9 +617,8 @@ const CustomerCatalog = () => {
                         <Button
                           variant={selectedCategory === category.name ? "fire" : "outline"}
                           onClick={() => setSelectedCategory(category.name)}
-                          className="min-w-fit flex items-center gap-2 rounded-full"
+                          className="min-w-fit rounded-full text-xs h-7 xs:h-8 xs:text-sm"
                         >
-                          <span>{category.icon}</span>
                           {category.name}
                         </Button>
                       </CarouselItem>
@@ -635,7 +634,7 @@ const CustomerCatalog = () => {
                   <Button
                     variant={selectedCategory === "Todos" ? "fire" : "outline"}
                     onClick={() => setSelectedCategory("Todos")}
-                    className="min-w-fit rounded-full"
+                    className="min-w-fit rounded-full text-xs h-7 sm:h-9 sm:text-sm"
                   >
                     Todos
                   </Button>
@@ -644,9 +643,8 @@ const CustomerCatalog = () => {
                       key={category.id}
                       variant={selectedCategory === category.name ? "fire" : "outline"}
                       onClick={() => setSelectedCategory(category.name)}
-                      className="min-w-fit flex items-center gap-2 rounded-full"
+                      className="min-w-fit rounded-full text-xs h-7 sm:h-9 sm:text-sm"
                     >
-                      <span>{category.icon}</span>
                       {category.name}
                     </Button>
                   ))}
@@ -655,16 +653,16 @@ const CustomerCatalog = () => {
             </div>
 
             {/* Popular Dishes */}
-            <div className="mb-6">
-              <div className="flex justify-between items-center mb-4">
-                <h3 className="text-lg font-semibold">Pratos Populares</h3>
-                <Button variant="ghost" size="sm">Ver Mais</Button>
+            <div className="mb-4 sm:mb-6">
+              <div className="flex justify-between items-center mb-2 xs:mb-4">
+                <h3 className="text-base xs:text-lg font-semibold">Pratos Populares</h3>
+                <Button variant="ghost" size="sm" className="h-7 xs:h-8 text-xs xs:text-sm">Ver Mais</Button>
               </div>
               
               {isMobile ? (
                 <Carousel className="w-full">
                   <CarouselContent>
-                    {filteredProducts.slice(0, 4).map((product) => (
+                    {filteredProducts.slice(4).map((product) => (
                       <CarouselItem key={product.id} className="md:basis-1/2">
                         <Card className="hover:shadow-warm transition-all duration-300 overflow-hidden border border-muted/50 group">
                           <CardContent className="p-0">
@@ -683,14 +681,14 @@ const CustomerCatalog = () => {
                                   {product.description}
                                 </p>
                                 <div className="flex items-center justify-between">
-                                  <span className="font-bold text-primary">R$ {product.price.toFixed(2)}</span>
+                                  <span className="font-bold text-primary text-sm sm:text-base">R$ {product.price.toFixed(2)}</span>
                                   <div className="flex items-center gap-1">
                                     {cart.find(item => item.id === product.id) ? (
                                       <div className="flex items-center gap-1">
                                         <Button 
                                           size="icon" 
                                           variant="outline"
-                                          className="h-7 w-7"
+                                          className="h-6 w-6 sm:h-7 sm:w-7"
                                           onClick={() => removeFromCart(product.id)}
                                         >
                                           <Minus className="h-3 w-3" />
@@ -701,7 +699,7 @@ const CustomerCatalog = () => {
                                         <Button 
                                           size="icon" 
                                           variant="outline"
-                                          className="h-7 w-7"
+                                          className="h-6 w-6 sm:h-7 sm:w-7"
                                           onClick={() => addToCart(product.id)}
                                         >
                                           <Plus className="h-3 w-3" />
@@ -712,7 +710,7 @@ const CustomerCatalog = () => {
                                         size="sm" 
                                         variant="fire"
                                         onClick={() => addToCart(product.id)}
-                                        className="shadow-fire group-hover:animate-warm-pulse"
+                                        className="shadow-fire group-hover:animate-warm-pulse text-xs sm:text-sm h-7 sm:h-8"
                                       >
                                         Adicionar
                                       </Button>
@@ -720,8 +718,12 @@ const CustomerCatalog = () => {
                                   </div>
                                 </div>
                               </div>
-                              <div className="w-24 h-24 m-4 bg-muted/30 rounded-lg flex items-center justify-center text-3xl overflow-hidden">
-                                {product.image}
+                              <div className="w-28 h-28 m-4 bg-muted/30 rounded-lg flex items-center justify-center overflow-hidden">
+                                {typeof product.image === 'string' && (product.image.startsWith('data:image') || product.image.startsWith('http')) ? (
+                                  <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
+                                ) : (
+                                  <div className="w-full h-full bg-muted/50 flex items-center justify-center text-xs">Sem imagem</div>
+                                )}
                               </div>
                             </div>
                           </CardContent>
@@ -735,69 +737,72 @@ const CustomerCatalog = () => {
                   </div>
                 </Carousel>
               ) : (
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {filteredProducts.slice(0, 4).map((product) => (
-                  <Card key={product.id} className="hover:shadow-warm transition-all duration-300 overflow-hidden border border-muted/50 group">
-                    <CardContent className="p-0">
-                      <div className="flex">
-                        <div className="flex-1 p-4">
-                          <div className="flex justify-between items-start mb-1">
-                            <h4 className="font-semibold text-sm">{product.name}</h4>
-                            <button 
-                              onClick={() => toggleFavorite(product.id)}
-                              className="text-muted-foreground hover:text-primary transition-colors"
-                            >
-                              <Heart className={`h-4 w-4 ${favorites.includes(product.id) ? 'fill-primary text-primary' : ''}`} />
-                            </button>
-                          </div>
-                          <p className="text-xs text-muted-foreground mb-2 line-clamp-2">
-                            {product.description}
-                          </p>
-                          {/* Avaliação de estrelas removida */}
-                          <div className="flex items-center justify-between">
-                            <span className="font-bold text-primary">R$ {product.price.toFixed(2)}</span>
-                            <div className="flex items-center gap-1">
-                              {cart.find(item => item.id === product.id) ? (
-                                <div className="flex items-center gap-1">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+                    {filteredProducts.slice(0, 4).map((product) => (
+                    <Card key={product.id} className="hover:shadow-warm transition-all duration-300 overflow-hidden border border-muted/50 group">
+                      <CardContent className="p-0">
+                        <div className="flex flex-col xs:flex-row">
+                          <div className="flex-1 p-3 sm:p-4">
+                            <div className="flex justify-between items-start mb-1">
+                              <h4 className="font-semibold text-sm truncate pr-2">{product.name}</h4>
+                              <button 
+                                onClick={() => toggleFavorite(product.id)}
+                                className="text-muted-foreground hover:text-primary transition-colors flex-shrink-0"
+                              >
+                                <Heart className={`h-4 w-4 ${favorites.includes(product.id) ? 'fill-primary text-primary' : ''}`} />
+                              </button>
+                            </div>
+                            <p className="text-xs text-muted-foreground mb-2 line-clamp-2">
+                              {product.description}
+                            </p>
+                            <div className="flex items-center justify-between">
+                              <span className="font-bold text-primary text-sm sm:text-base">R$ {product.price.toFixed(2)}</span>
+                              <div className="flex items-center gap-1">
+                                {cart.find(item => item.id === product.id) ? (
+                                  <div className="flex items-center gap-1">
+                                    <Button 
+                                      size="icon" 
+                                      variant="outline"
+                                      className="h-6 w-6 sm:h-7 sm:w-7"
+                                      onClick={() => removeFromCart(product.id)}
+                                    >
+                                      <Minus className="h-3 w-3" />
+                                    </Button>
+                                    <span className="text-xs font-medium w-4 text-center">
+                                      {cart.find(item => item.id === product.id)?.quantity || 0}
+                                    </span>
+                                    <Button 
+                                      size="icon" 
+                                      variant="outline"
+                                      className="h-6 w-6 sm:h-7 sm:w-7"
+                                      onClick={() => addToCart(product.id)}
+                                    >
+                                      <Plus className="h-3 w-3" />
+                                    </Button>
+                                  </div>
+                                ) : (
                                   <Button 
-                                    size="icon" 
-                                    variant="outline"
-                                    className="h-7 w-7"
-                                    onClick={() => removeFromCart(product.id)}
-                                  >
-                                    <Minus className="h-3 w-3" />
-                                  </Button>
-                                  <span className="text-xs font-medium w-4 text-center">
-                                    {cart.find(item => item.id === product.id)?.quantity || 0}
-                                  </span>
-                                  <Button 
-                                    size="icon" 
-                                    variant="outline"
-                                    className="h-7 w-7"
+                                    size="sm" 
+                                    variant="fire"
                                     onClick={() => addToCart(product.id)}
+                                    className="shadow-fire group-hover:animate-warm-pulse text-xs sm:text-sm h-7 sm:h-8"
                                   >
-                                    <Plus className="h-3 w-3" />
+                                    Adicionar
                                   </Button>
-                                </div>
-                              ) : (
-                                <Button 
-                                  size="sm" 
-                                  variant="fire"
-                                  onClick={() => addToCart(product.id)}
-                                  className="shadow-fire group-hover:animate-warm-pulse"
-                                >
-                                  Adicionar
-                                </Button>
-                              )}
+                                )}
+                              </div>
                             </div>
                           </div>
+                          <div className="w-full xs:w-24 sm:w-28 h-24 sm:h-28 xs:m-3 sm:m-4 bg-muted/30 rounded-lg flex items-center justify-center overflow-hidden order-first xs:order-last">
+                            {typeof product.image === 'string' && (product.image.startsWith('data:image') || product.image.startsWith('http')) ? (
+                              <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
+                            ) : (
+                              <div className="w-full h-full bg-muted/50 flex items-center justify-center text-xs">Sem imagem</div>
+                            )}
+                          </div>
                         </div>
-                        <div className="w-24 h-24 m-4 bg-muted/30 rounded-lg flex items-center justify-center text-3xl overflow-hidden">
-                          {product.image}
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
+                      </CardContent>
+                    </Card>
                 ))}
               </div>
               )}
@@ -808,19 +813,19 @@ const CustomerCatalog = () => {
               <div>
                 <h3 className="text-lg font-semibold mb-4">Todos os Pratos</h3>
                 {isMobile ? (
-                  <Carousel className="w-full">
-                    <CarouselContent>
-                      {filteredProducts.slice(4).map((product) => (
-                        <CarouselItem key={product.id} className="md:basis-1/2">
-                          <Card className="hover:shadow-warm transition-all duration-300 overflow-hidden border border-muted/50 group">
-                            <CardContent className="p-0">
-                              <div className="flex">
-                                <div className="flex-1 p-4">
+                <Carousel className="w-full">
+                  <CarouselContent>
+                    {filteredProducts.slice(4).map((product) => (
+                      <CarouselItem key={product.id} className="md:basis-1/2">
+                        <Card className="hover:shadow-warm transition-all duration-300 overflow-hidden border border-muted/50 group">
+                          <CardContent className="p-0">
+                            <div className="flex">
+                              <div className="flex-1 p-4">
                                   <div className="flex justify-between items-start mb-1">
-                                    <h4 className="font-semibold text-sm">{product.name}</h4>
+                                    <h4 className="font-semibold text-sm truncate pr-2">{product.name}</h4>
                                     <button 
                                       onClick={() => toggleFavorite(product.id)}
-                                      className="text-muted-foreground hover:text-primary transition-colors"
+                                      className="text-muted-foreground hover:text-primary transition-colors flex-shrink-0"
                                     >
                                       <Heart className={`h-4 w-4 ${favorites.includes(product.id) ? 'fill-primary text-primary' : ''}`} />
                                     </button>
@@ -829,14 +834,14 @@ const CustomerCatalog = () => {
                                     {product.description}
                                   </p>
                                   <div className="flex items-center justify-between">
-                                    <span className="font-bold text-primary">R$ {product.price.toFixed(2)}</span>
+                                    <span className="font-bold text-primary text-sm sm:text-base">R$ {product.price.toFixed(2)}</span>
                                     <div className="flex items-center gap-1">
                                       {cart.find(item => item.id === product.id) ? (
                                         <div className="flex items-center gap-1">
                                           <Button 
                                             size="icon" 
                                             variant="outline"
-                                            className="h-7 w-7"
+                                            className="h-6 w-6 sm:h-7 sm:w-7"
                                             onClick={() => removeFromCart(product.id)}
                                           >
                                             <Minus className="h-3 w-3" />
@@ -847,7 +852,7 @@ const CustomerCatalog = () => {
                                           <Button 
                                             size="icon" 
                                             variant="outline"
-                                            className="h-7 w-7"
+                                            className="h-6 w-6 sm:h-7 sm:w-7"
                                             onClick={() => addToCart(product.id)}
                                           >
                                             <Plus className="h-3 w-3" />
@@ -858,7 +863,7 @@ const CustomerCatalog = () => {
                                           size="sm" 
                                           variant="fire"
                                           onClick={() => addToCart(product.id)}
-                                          className="shadow-fire group-hover:animate-warm-pulse"
+                                          className="shadow-fire group-hover:animate-warm-pulse text-xs sm:text-sm h-7 sm:h-8"
                                         >
                                           Adicionar
                                         </Button>
@@ -866,8 +871,12 @@ const CustomerCatalog = () => {
                                     </div>
                                   </div>
                                 </div>
-                                <div className="w-24 h-24 m-4 bg-muted/30 rounded-lg flex items-center justify-center text-3xl overflow-hidden">
-                                  {product.image}
+                                <div className="w-28 h-28 m-4 bg-muted/30 rounded-lg flex items-center justify-center overflow-hidden">
+                                  {typeof product.image === 'string' && (product.image.startsWith('data:image') || product.image.startsWith('http')) ? (
+                                    <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
+                                  ) : (
+                                    <div className="w-full h-full bg-muted/50 flex items-center justify-center text-xs">Sem imagem</div>
+                                  )}
                                 </div>
                               </div>
                             </CardContent>
@@ -881,17 +890,17 @@ const CustomerCatalog = () => {
                     </div>
                   </Carousel>
                 ) : (
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                     {filteredProducts.slice(4).map((product) => (
                     <Card key={product.id} className="hover:shadow-warm transition-all duration-300 overflow-hidden border border-muted/50 group">
                       <CardContent className="p-0">
-                        <div className="flex">
-                          <div className="flex-1 p-4">
+                        <div className="flex flex-col xs:flex-row">
+                          <div className="flex-1 p-3 sm:p-4">
                             <div className="flex justify-between items-start mb-1">
-                              <h4 className="font-semibold text-sm">{product.name}</h4>
+                              <h4 className="font-semibold text-sm truncate pr-2">{product.name}</h4>
                               <button 
                                 onClick={() => toggleFavorite(product.id)}
-                                className="text-muted-foreground hover:text-primary transition-colors"
+                                className="text-muted-foreground hover:text-primary transition-colors flex-shrink-0"
                               >
                                 <Heart className={`h-4 w-4 ${favorites.includes(product.id) ? 'fill-primary text-primary' : ''}`} />
                               </button>
@@ -899,16 +908,15 @@ const CustomerCatalog = () => {
                             <p className="text-xs text-muted-foreground mb-2 line-clamp-2">
                               {product.description}
                             </p>
-                            {/* Avaliação de estrelas removida */}
                             <div className="flex items-center justify-between">
-                              <span className="font-bold text-primary">R$ {product.price.toFixed(2)}</span>
+                              <span className="font-bold text-primary text-sm sm:text-base">R$ {product.price.toFixed(2)}</span>
                               <div className="flex items-center gap-1">
                                 {cart.find(item => item.id === product.id) ? (
                                   <div className="flex items-center gap-1">
                                     <Button 
                                       size="icon" 
                                       variant="outline"
-                                      className="h-7 w-7"
+                                      className="h-6 w-6 sm:h-7 sm:w-7"
                                       onClick={() => removeFromCart(product.id)}
                                     >
                                       <Minus className="h-3 w-3" />
@@ -919,7 +927,7 @@ const CustomerCatalog = () => {
                                     <Button 
                                       size="icon" 
                                       variant="outline"
-                                      className="h-7 w-7"
+                                      className="h-6 w-6 sm:h-7 sm:w-7"
                                       onClick={() => addToCart(product.id)}
                                     >
                                       <Plus className="h-3 w-3" />
@@ -930,7 +938,7 @@ const CustomerCatalog = () => {
                                     size="sm" 
                                     variant="fire"
                                     onClick={() => addToCart(product.id)}
-                                    className="shadow-fire group-hover:animate-warm-pulse"
+                                    className="shadow-fire group-hover:animate-warm-pulse text-xs sm:text-sm h-7 sm:h-8"
                                   >
                                     Adicionar
                                   </Button>
@@ -938,8 +946,12 @@ const CustomerCatalog = () => {
                               </div>
                             </div>
                           </div>
-                          <div className="w-24 h-24 m-4 bg-muted/30 rounded-lg flex items-center justify-center text-3xl overflow-hidden">
-                            {product.image}
+                          <div className="w-full xs:w-24 sm:w-28 h-24 sm:h-28 xs:m-3 sm:m-4 bg-muted/30 rounded-lg flex items-center justify-center overflow-hidden order-first xs:order-last">
+                            {typeof product.image === 'string' && (product.image.startsWith('data:image') || product.image.startsWith('http')) ? (
+                              <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
+                            ) : (
+                              <div className="w-full h-full bg-muted/50 flex items-center justify-center text-xs">Sem imagem</div>
+                            )}
                           </div>
                         </div>
                       </CardContent>
@@ -968,8 +980,12 @@ const CustomerCatalog = () => {
             <div className="space-y-4">
               {getCartItemsForSidebar().map((item) => (
                 <div key={item.id} className="flex items-center gap-3 p-3 bg-muted/50 rounded-lg group hover:bg-muted/80 transition-colors">
-                  <div className="w-12 h-12 bg-background rounded-lg flex items-center justify-center text-xl">
-                    {item.image}
+                  <div className="w-16 h-16 bg-background rounded-lg flex items-center justify-center overflow-hidden">
+                      {typeof item.image === 'string' && (item.image.startsWith('data:image') || item.image.startsWith('http')) ? (
+                        <img src={item.image} alt={item.name} className="w-full h-full object-cover" />
+                      ) : (
+                        <div className="w-full h-full bg-muted/50 flex items-center justify-center text-xs">Sem imagem</div>
+                      )}
                   </div>
                   <div className="flex-1">
                     <h4 className="font-medium text-sm">{item.name}</h4>
@@ -1079,16 +1095,16 @@ const CustomerCatalog = () => {
         </div>
         
         {/* Mobile Cart Button */}
-        <div className="fixed bottom-4 right-4 lg:hidden z-50">
+        <div className="fixed bottom-3 xs:bottom-4 right-3 xs:right-4 lg:hidden z-50">
           <Button 
             variant="fire" 
             size="icon" 
-            className="h-14 w-14 rounded-full shadow-fire relative"
+            className="h-12 w-12 xs:h-14 xs:w-14 rounded-full shadow-fire relative"
             onClick={() => setShowMobileCart(!showMobileCart)}
           >
-            <ShoppingCart className="h-6 w-6" />
+            <ShoppingCart className="h-5 w-5 xs:h-6 xs:w-6" />
             {getTotalItems() > 0 && (
-              <span className="absolute -top-2 -right-2 bg-secondary text-secondary-foreground text-xs font-bold rounded-full h-6 w-6 flex items-center justify-center">
+              <span className="absolute -top-2 -right-2 bg-secondary text-secondary-foreground text-xs font-bold rounded-full h-5 w-5 xs:h-6 xs:w-6 flex items-center justify-center">
                 {getTotalItems()}
               </span>
             )}
@@ -1098,15 +1114,15 @@ const CustomerCatalog = () => {
         {/* Mobile Cart Drawer */}
         <div className={`fixed inset-0 bg-black/50 z-50 lg:hidden transition-opacity ${showMobileCart ? 'opacity-100' : 'opacity-0 pointer-events-none'}`} onClick={() => setShowMobileCart(false)}>
           <div 
-            className={`fixed bottom-0 left-0 right-0 bg-background rounded-t-xl p-4 transition-transform ${showMobileCart ? 'translate-y-0' : 'translate-y-full'}`}
+            className={`fixed bottom-0 left-0 right-0 bg-background rounded-t-xl p-3 xs:p-4 transition-transform ${showMobileCart ? 'translate-y-0' : 'translate-y-full'}`}
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="w-12 h-1 bg-muted rounded-full mx-auto mb-4"></div>
+            <div className="w-10 xs:w-12 h-1 bg-muted rounded-full mx-auto mb-3 xs:mb-4"></div>
             
-            <div className="flex items-center justify-between mb-4">
-              <div className="flex items-center gap-2">
-                <ShoppingCart className="h-5 w-5" />
-                <h3 className="font-semibold">Meu Carrinho</h3>
+            <div className="flex items-center justify-between mb-3 xs:mb-4">
+              <div className="flex items-center gap-1.5 xs:gap-2">
+                <ShoppingCart className="h-4 w-4 xs:h-5 xs:w-5" />
+                <h3 className="font-semibold text-sm xs:text-base">Meu Carrinho</h3>
               </div>
               <span className="text-xs text-muted-foreground">{getTotalItems()} itens</span>
             </div>
@@ -1117,48 +1133,52 @@ const CustomerCatalog = () => {
                 <p>Seu carrinho está vazio</p>
               </div>
             ) : (
-              <div className="space-y-4 max-h-[50vh] overflow-y-auto">
+              <div className="space-y-3 xs:space-y-4 max-h-[40vh] xs:max-h-[50vh] overflow-y-auto">
                 {getCartItemsForSidebar().map((item) => (
-                  <div key={item.id} className="flex items-center gap-3 p-3 bg-muted/50 rounded-lg">
-                    <div className="w-12 h-12 bg-background rounded-lg flex items-center justify-center text-xl">
-                      {item.image}
+                  <div key={item.id} className="flex items-center gap-2 xs:gap-3 p-2 xs:p-3 bg-muted/50 rounded-lg">
+                    <div className="w-14 h-14 xs:w-16 xs:h-16 bg-background rounded-lg flex items-center justify-center overflow-hidden">
+                        {typeof item.image === 'string' && (item.image.startsWith('data:image') || item.image.startsWith('http')) ? (
+                          <img src={item.image} alt={item.name} className="w-full h-full object-cover" />
+                        ) : (
+                          <div className="w-full h-full bg-muted/50 flex items-center justify-center text-xs">Sem imagem</div>
+                        )}
                     </div>
-                    <div className="flex-1">
-                      <h4 className="font-medium text-sm">{item.name}</h4>
+                    <div className="flex-1 min-w-0">
+                      <h4 className="font-medium text-xs xs:text-sm truncate">{item.name}</h4>
                       {item.notes && (
-                        <p className="text-xs text-muted-foreground italic mt-0.5 mb-1">
+                        <p className="text-[10px] xs:text-xs text-muted-foreground italic mt-0.5 mb-0.5 xs:mb-1 line-clamp-1">
                           Obs: {item.notes}
                         </p>
                       )}
-                      <div className="flex items-center gap-2 mt-1">
+                      <div className="flex items-center gap-1 xs:gap-2 mt-0.5 xs:mt-1">
                         <Button 
                           size="icon" 
                           variant="ghost"
-                          className="h-5 w-5 p-0"
+                          className="h-4 w-4 xs:h-5 xs:w-5 p-0"
                           onClick={() => removeFromCart(item.id)}
                         >
-                          <Minus className="h-3 w-3" />
+                          <Minus className="h-2 w-2 xs:h-3 xs:w-3" />
                         </Button>
-                        <span className="text-xs">{item.quantity}x</span>
+                        <span className="text-[10px] xs:text-xs">{item.quantity}x</span>
                         <Button 
                           size="icon" 
                           variant="ghost"
-                          className="h-5 w-5 p-0"
+                          className="h-4 w-4 xs:h-5 xs:w-5 p-0"
                           onClick={() => addToCart(item.id)}
                         >
-                          <Plus className="h-3 w-3" />
+                          <Plus className="h-2 w-2 xs:h-3 xs:w-3" />
                         </Button>
                       </div>
                     </div>
                     <div className="text-right">
-                      <p className="font-bold text-sm">R$ {(item.price * item.quantity).toFixed(2)}</p>
+                      <p className="font-bold text-xs xs:text-sm">R$ {(item.price * item.quantity).toFixed(2)}</p>
                       <Button 
                         size="icon" 
                         variant="ghost"
-                        className="h-6 w-6 p-0 text-muted-foreground hover:text-destructive mt-1"
+                        className="h-5 w-5 xs:h-6 xs:w-6 p-0 text-muted-foreground hover:text-destructive mt-0.5 xs:mt-1"
                         onClick={() => deleteFromCart(item.id)}
                       >
-                        <Trash2 className="h-3 w-3" />
+                        <Trash2 className="h-2 w-2 xs:h-3 xs:w-3" />
                       </Button>
                     </div>
                   </div>
@@ -1167,14 +1187,14 @@ const CustomerCatalog = () => {
                 <Button 
                   variant="outline" 
                   size="sm" 
-                  className="w-full"
+                  className="w-full text-xs xs:text-sm py-1 xs:py-2"
                   onClick={calculateShipping}
                 >
                   Calcular Frete
                 </Button>
                 
                 {showShippingCalculator && (
-                  <div className="text-xs space-y-1 bg-muted/30 p-3 rounded">
+                  <div className="text-[10px] xs:text-xs space-y-0.5 xs:space-y-1 bg-muted/30 p-2 xs:p-3 rounded">
                     {distance && (
                       <div className="flex justify-between">
                         <span>Distância:</span>
@@ -1191,7 +1211,7 @@ const CustomerCatalog = () => {
                         <span>R$ {Math.ceil(distance).toFixed(2)}</span>
                       </div>
                     )}
-                    <Separator className="my-1" />
+                    <Separator className="my-0.5 xs:my-1" />
                     <div className="flex justify-between font-medium">
                       <span>Frete:</span>
                       <span>R$ {shippingCost.toFixed(2)}</span>
@@ -1199,23 +1219,23 @@ const CustomerCatalog = () => {
                   </div>
                 )}
                 
-                <div className="border-t pt-4 mt-4">
-                  <div className="flex justify-between items-center mb-2">
-                    <span className="text-sm">Subtotal</span>
-                    <span className="text-sm">R$ {getTotalPrice().toFixed(2)}</span>
+                <div className="border-t pt-3 xs:pt-4 mt-3 xs:mt-4">
+                  <div className="flex justify-between items-center mb-1 xs:mb-2">
+                    <span className="text-xs xs:text-sm">Subtotal</span>
+                    <span className="text-xs xs:text-sm">R$ {getTotalPrice().toFixed(2)}</span>
                   </div>
-                  <div className="flex justify-between items-center mb-2">
-                    <span className="text-sm">Frete</span>
-                    <span className="text-sm">R$ {shippingCost.toFixed(2)}</span>
+                  <div className="flex justify-between items-center mb-1 xs:mb-2">
+                    <span className="text-xs xs:text-sm">Frete</span>
+                    <span className="text-xs xs:text-sm">R$ {shippingCost.toFixed(2)}</span>
                   </div>
-                  <div className="flex justify-between items-center mb-4">
-                    <span className="font-bold">Total</span>
-                    <span className="font-bold text-primary text-lg">R$ {getFinalPrice().toFixed(2)}</span>
+                  <div className="flex justify-between items-center mb-3 xs:mb-4">
+                    <span className="font-bold text-sm">Total</span>
+                    <span className="font-bold text-primary text-base xs:text-lg">R$ {getFinalPrice().toFixed(2)}</span>
                   </div>
                   
                   <Button 
                     variant="fire" 
-                    className="w-full shadow-fire"
+                    className="w-full shadow-fire text-sm xs:text-base py-2 xs:py-3"
                     onClick={() => {
                       localStorage.setItem('cart', JSON.stringify(cart));
                       localStorage.setItem('shippingCost', shippingCost.toString());
@@ -1270,8 +1290,12 @@ const CustomerCatalog = () => {
             {suggestedItems.map((item) => (
               <div key={item.id} className="flex items-center justify-between p-3 bg-muted/50 rounded-lg hover:bg-muted/80 transition-colors">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-background rounded-lg flex items-center justify-center text-xl">
-                    {item.image}
+                  <div className="w-14 h-14 bg-background rounded-lg flex items-center justify-center overflow-hidden">
+                    {typeof item.image === 'string' && (item.image.startsWith('data:image') || item.image.startsWith('http')) ? (
+                      <img src={item.image} alt={item.name} className="w-full h-full object-cover" />
+                    ) : (
+                      <div className="w-full h-full bg-muted/50 flex items-center justify-center text-xs">Sem imagem</div>
+                    )}
                   </div>
                   <div>
                     <h4 className="font-medium text-sm">{item.name}</h4>
